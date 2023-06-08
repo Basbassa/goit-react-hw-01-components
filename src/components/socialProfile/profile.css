@@ -13,4 +13,10 @@
 .stats {
   list-style: none;
   display: flex;
+  font-size: 18px;
+}
+
+.secondaryDescription {
+  color: blueviolet;
+  padding: 15px;
 }
