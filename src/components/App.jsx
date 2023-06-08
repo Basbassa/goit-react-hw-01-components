@@ -13,7 +13,6 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <p>Something happend..</p>
       <Profile />
     </div>
   );
