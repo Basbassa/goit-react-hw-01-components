@@ -2,6 +2,7 @@ import React from 'react';
 import Profile from './socialProfile/Profile';
 import Stats from './Stats/Stats';
 import FriendList from './FriendList/FriendList';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column', // Ustawienie układu kolumnowego
         fontSize: 40,
         color: '#010101',
       }}
@@ -18,6 +20,7 @@ export const App = () => {
       <Profile />
       <Stats />
       <FriendList />
+      <TransactionHistory />
     </div>
   );
 };
