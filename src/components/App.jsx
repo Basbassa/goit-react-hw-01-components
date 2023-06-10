@@ -3,6 +3,7 @@ import Profile from './socialProfile/Profile';
 import Stats from './Stats/Stats';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
+import data from './Stats/data.json'; // Zak
 
 export const App = () => {
   return (
@@ -12,13 +13,13 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: 'column', // Ustawienie układu kolumnowego
+        flexDirection: 'column',
         fontSize: 40,
         color: '#010101',
       }}
     >
       <Profile />
-      <Stats />
+      <Stats title="Upload stats" stats={data} />
       <FriendList />
       <TransactionHistory />
     </div>
