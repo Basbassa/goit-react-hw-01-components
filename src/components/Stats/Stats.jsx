@@ -1,15 +1,19 @@
 import React from 'react';
+import styles from './Stats.module.css';
 
 const Stats = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+    <section className={styles.statistics}>
+      {title && <h2 className={styles.title}>{title}</h2>}
 
-      <ul className="stat-list">
+      <ul className={styles['stat-list']}>
+        <li className={`${styles.item} ${styles['item-header']}`}>
+          <span className={styles.label}>Upload Stats</span>
+        </li>
         {stats.map((stat, index) => (
-          <li className="item" key={index}>
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}%</span>
+          <li className={styles.item} key={index}>
+            <span className={styles.label}>{stat.label}</span>
+            <span className={styles.percentage}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>
