@@ -1,5 +1,7 @@
 import React from 'react';
 import Profile from './socialProfile/Profile';
+import Stats from './Stats/Stats';
+import FriendList from './FriendList/FriendList';
 
 export const App = () => {
   return (
@@ -14,6 +16,8 @@ export const App = () => {
       }}
     >
       <Profile />
+      <Stats />
+      <FriendList />
     </div>
   );
 };
