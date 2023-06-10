@@ -1,9 +1,10 @@
 import React from 'react';
+import friendsData from './friends.json';
 
-const FriendList = ({ friends }) => {
+const FriendList = () => {
   return (
     <ul className="friend-list">
-      {friends.map(friend => (
+      {friendsData.map(friend => (
         <li className="item" key={friend.id}>
           <span
             className={`status ${friend.isOnline ? 'online' : 'offline'}`}
