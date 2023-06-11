@@ -7,9 +7,6 @@ const Stats = ({ title, stats }) => {
       {title && <h2 className={styles.title}>{title}</h2>}
 
       <ul className={styles['stat-list']}>
-        <li className={`${styles.item} ${styles['item-header']}`}>
-          <span className={styles.label}>Upload Stats</span>
-        </li>
         {stats.map((stat, index) => (
           <li className={styles.item} key={index}>
             <span className={styles.label}>{stat.label}</span>
