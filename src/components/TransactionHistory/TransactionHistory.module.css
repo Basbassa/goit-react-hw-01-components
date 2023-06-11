@@ -32,7 +32,7 @@
 }
 
 .transaction-history tr:first-child td {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .transaction-history tbody tr:hover {
