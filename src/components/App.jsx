@@ -7,7 +7,7 @@ import data from './Stats/data.json';
 
 export const App = () => {
   return (
-    <div>
+    <div style={{ display: 'grid', gap: '3%' }}>
       <Profile />
       <Stats title="Upload stats" stats={data} />
       <FriendList />
