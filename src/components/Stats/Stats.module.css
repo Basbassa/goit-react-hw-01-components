@@ -21,6 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: flex-start;
 }
 
 .item {
@@ -31,8 +32,9 @@
   align-items: center;
   padding: 0.5rem;
   background-color: #eaf5f7;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  border-radius: 15px;
 }
 
 .item:nth-child(even) {
