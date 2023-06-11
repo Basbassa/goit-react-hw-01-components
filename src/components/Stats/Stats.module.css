@@ -35,10 +35,15 @@
   margin-right: 0;
   margin-bottom: 0;
   border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .item:nth-child(even) {
   background-color: #cde2e6;
+}
+
+.item:hover {
+  transform: scale(1.1);
 }
 
 .label {
