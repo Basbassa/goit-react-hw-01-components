@@ -72,6 +72,14 @@
   text-align: center;
 }
 
+.stats li:hover {
+  transform: scale(1.03);
+}
+
+.stats li:hover .label {
+  color: #ffffff;
+}
+
 .stats .label {
   display: block;
   font-weight: bold;
